@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.arcelormittal.Controllers.AdministratorController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="212.0" layoutY="-1.0" text="Administrator Panel">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutX="7.0" layoutY="29.0" prefHeight="369.0" prefWidth="600.0">
+         <children>
+            <Label text="Ajouter un Utilisateur" />
+            <HBox prefHeight="39.0" prefWidth="703.0">
+               <children>
+                  <TextField fx:id="nameField" alignment="CENTER" promptText="name">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="emailField" alignment="CENTER" promptText="email">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <ChoiceBox fx:id="roleChoiceBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+                  <Button fx:id="addButton" mnemonicParsing="false" onAction="#onAjouterClick" prefHeight="25.0" prefWidth="110.0" text="Ajouter">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <ListView fx:id="usersListView" onMouseClicked="#onListItemsClick" prefHeight="200.0" prefWidth="200.0" />
+            <VBox fx:id="updateVBox" alignment="CENTER" prefHeight="87.0" prefWidth="600.0">
+               <children>
+                  <Label text="Modifier / Supprimer Utilisateur" />
+                  <HBox alignment="CENTER" prefHeight="41.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="idLabel" alignment="CENTER" prefHeight="17.0" prefWidth="17.0" text="id">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="updateName" alignment="CENTER" promptText="name">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="updateEmail" alignment="CENTER" promptText="email">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="updatePassword" alignment="CENTER" promptText="password">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <ChoiceBox fx:id="updateChoiceBox" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </ChoiceBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="39.0" prefWidth="600.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onUpdateClick" text="Modifier">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onDeleteClick" text="Supprimer">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets right="160.0" />
+   </padding>
+</AnchorPane>

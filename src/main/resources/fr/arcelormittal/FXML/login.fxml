@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.arcelormittal.LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #F9C22E;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="62.0" layoutY="126.0" text="Orowan" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Lazy Spring Day Demo" size="32.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="40.0" layoutY="371.0" text="Copyright (c). All Rights Reserved." textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="61.0" layoutY="25.0" text="Secure Login" textAlignment="CENTER">
+               <font>
+                  <Font name="BaronNeue" size="24.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+
+            <TextField fx:id="mailField" layoutX="72.0" layoutY="141.0" promptText="mail" />
+            <PasswordField fx:id="pwdField" layoutX="72.0" layoutY="175.0" promptText="password" />
+            <Button fx:id="loginBtn" layoutX="72.0" layoutY="214.0" mnemonicParsing="false" onAction="#onLoginClick" prefHeight="25.0" prefWidth="149.0" text="Login" />
+            <Label fx:id="loginMessage" contentDisplay="CENTER" layoutX="132.0" layoutY="68.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
