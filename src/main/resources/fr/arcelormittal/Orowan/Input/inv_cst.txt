@@ -1,0 +1,2 @@
+Cas	He	Hs	Te	Ts	Diam_WR	WRyoung	offset ini	mu_ini	Force	G
+9	20.786	11.767	10.549	0.0	1412.49	0.0	737.928	216000.0	0.0	0.0
