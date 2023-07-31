@@ -6,8 +6,8 @@ a well-known company in the world of metallurgy.
 It is a team project, we are using the SCRUM method, which is an Agile method. 
 This method imposes rigor on the project's progress, with one meeting per week.
 
-The collaborators are : [Emile Aydar](https://github.com/xXMagIkZzR4mBOXx),
-[Amine H.](https://github.com/ggleKg) and [myself](https://github.com/YooZiiX).
+The collaborators are : [Jérémy Lucas](https://github.com/YooZiiX), 
+[Amine H.](https://github.com/ggleKg) and [myself](https://github.com/xXMagIkZzR4mBOXx).
 
 The project is based on the following specifications:
 
